@@ -130,7 +130,7 @@ public partial class Program
 
         GetEnumUnderlyingType.TestGetEnumUnderlyingType();
 
-        return 100 + _errors;
+        return 101 + _errors;
     }
 
     private static int _varInt = 42;
