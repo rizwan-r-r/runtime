@@ -1,5 +1,10 @@
 {
     "recommendations": [
-        "ms-python.python"
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "davidanson.vscode-markdownlint",
+        "devsense.phptools-vscode",
+        "vscode-icons-team.vscode-icons",
+        "eclipse-cdt.websocket-adapter"
     ]
 }

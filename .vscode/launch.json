@@ -5,6 +5,61 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Arm Debug",
+            "type": "arm-debug",
+            "request": "attach",
+            "address": "Websocket (ws://<host>:<port>) or socket (<host>:<port>) to connect to"
+        },
+        {
+            "name": "Embedded Debug",
+            "type": "embedded-debug",
+            "request": "launch",
+            "serialNumber": "<serial number of your device>",
+            "program": "${command:embedded-debug.getApplicationFile}",
+            "cmsisPack": "<path or URL of CMSIS Pack for your device>"
+        },
+        {
+            "type": "cobol",
+            "request": "launch",
+            "name": "COBOL (native): Remote-SSH",
+            "program": "<insert-program-name-here>",
+            "env": {
+                "TERM": "xterm",
+                "DISPLAY": "<hostname-or-ip:D.S>"
+            },
+            "stopOnEntry": true
+        },
+        {
+            "name": "Embedded Debug",
+            "type": "embedded-debug",
+            "request": "launch",
+            "serialNumber": "<serial number of your device>",
+            "program": "${command:embedded-debug.getApplicationFile}",
+            "cmsisPack": "<path or URL of CMSIS Pack for your device>"
+        },
+        {
+            "name": "Arm Debug",
+            "type": "arm-debug",
+            "request": "attach",
+            "address": "Websocket (ws://<host>:<port>) or socket (<host>:<port>) to connect to"
+        },
+        {
+            "type": "cobol",
+            "request": "launch",
+            "name": "COBOL (native): 64-bit",
+            "program": "${workspaceFolder}/<insert-program-name-here>",
+            "cwd": "${workspaceFolder}",
+            "is64Bit": true,
+            "stopOnEntry": true
+        },
+        {
+            "name": "Arm Debug",
+            "type": "arm-debug",
+            "request": "attach",
+            "address": "Websocket (ws://<host>:<port>) or socket (<host>:<port>) to connect to"
+        },
+
+        {
             "type": "cobol",
             "request": "launch",
             "name": "COBOL (native): Enterprise Server",
