@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "@microsoft/dotnet-runtime": "file:bin/dotnet-runtime",
-    "underscore": "1.13.2"
+    "underscore": "1.13.6"
   }
 }
